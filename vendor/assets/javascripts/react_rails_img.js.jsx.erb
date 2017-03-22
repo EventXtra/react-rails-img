@@ -1,7 +1,7 @@
 <%
 images = {}
 prefix = Rails.application.config.assets.prefix
-should_compute_assets_path = Rails.env.production? || Rails.env.staging? || Rails.env.beta? # for performance
+should_compute_assets_path = Rails.env.production? || Rails.env.staging? || Rails.env.demo? # for performance
 if should_compute_assets_path
   images_path = Rails.root.join('app/assets/images/')
   images_dir = images_path.to_s
